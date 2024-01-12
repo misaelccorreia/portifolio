@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  /* height: 100vh;  o vh é o viewport height altura da viewport*/
+  box-sizing: border-box; /*esse é para que o filho esteja dentro do elemento pai*/
+  background-color: #000000;
+  color: #F6F6F6;
+}
+.cabecalho {
+  padding: 2% 0% 0% 15%;/*cima direita baixo esquerdo*/
+
+}
+/*Aqui utilizamos o PADING para trabalhar a posição dos elementos dentro do container */
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho__menu__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #22D4FD;
+  text-decoration: none;
+}
+
+
+.apresentacao {
+  padding: 5% 15%;
+  /* margin: 10% 15%; */
+  display: flex; /*quando criamos um display flex automaticamente ele ja joga na horizontal*/
+  align-items: center; /*ele vai alinha os itens de acordo com o alinhamento deles*/
+  justify-content: space-between; /*esse aqui é para separar nos extremos os itens*/
+}
+.apresentacao__conteudo {
+  width: 615px;
+  display: flex;
+  flex-direction: column; 
+  gap: 40px;
+}
+.apresentacao__conteudo__titulo {
+  font-size: 36px;
+  font-family: 'Krona One', sans-serif;
+}
+.titulo-destaque{
+  color: #22D4FD;
+}
+.apresentacao_conteudo__texto{
+  font-size: 24px;
+  font-family: c;
+}
+.apresentacao__links {
+  display: flex;
+  flex-direction: column; /*nessa mudan;a de eixo as outras propiedades seguem ele*/
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.apresentacao__links__subtitulos {
+  font-family:'Krona One', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.apresentacao__links__link {
+/* Ctrl + K + C para comentar automaticamente */
+ display: flex;
+ justify-content: center;
+ gap: 16px;
+
+  
+ width: 378px;
+ text-align: center;
+ border-radius: 8px; 
+ font-size: 24px;
+ padding: 21.5px 0;
+ text-decoration: none;
+ color: #F6F6F6;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 600;
+ border: 2px solid #22D4FD; /* esse solid e uma propriedade nativa*/
+
+}
+.apresentacao__links__link:hover {
+  background-color: #272727;
+}
+
+.rodape {
+  padding: 24px;
+  
+  color: #000000;
+  background-color: #22D4FD;
+  
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+
+
+}
