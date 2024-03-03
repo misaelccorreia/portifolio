@@ -1,6 +1,11 @@
+/*Aplicando variáveis CSS > Aplindo as variáveis -> Ainda tem que utilizar para fontes e outras coisas relacionadas a atividade 04 da aula 5*/
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-
+:root{
+  --cor-principal: #000000;
+  --cor-secundaria:#F6F6F6;
+  --cor-terciaria:#22D4FD;
+}
 
 *{
   margin: 0;
@@ -10,8 +15,8 @@
 body{
   /* height: 100vh;  o vh é o viewport height altura da viewport*/
   box-sizing: border-box; /*esse é para que o filho esteja dentro do elemento pai*/
-  background-color: #000000;
-  color: #F6F6F6;
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
 }
 .cabecalho {
   padding: 2% 0% 0% 15%;/*cima direita baixo esquerdo*/
@@ -25,9 +30,9 @@ body{
 
 .cabecalho__menu__link {
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: #22D4FD;
+  color: var(--cor-terciaria);
   text-decoration: none;
 }
 
@@ -48,14 +53,14 @@ body{
   gap: 40px;
 }
 .apresentacao__conteudo__titulo {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: 'Krona One', sans-serif;
 }
 .titulo-destaque{
-  color: #22D4FD;
+  color: var(--cor-terciaria);
 }
 .apresentacao_conteudo__texto{
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: c;
 }
 .apresentacao__links {
@@ -68,7 +73,7 @@ body{
 .apresentacao__links__subtitulos {
   font-family:'Krona One', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .apresentacao__links__navegacao {
 /* Ctrl + K + C para comentar automaticamente */
@@ -80,13 +85,13 @@ body{
  width: 50%; /* sempre em relacao ao elemento pai*/
  text-align: center;
  border-radius: 8px; 
- font-size: 24px;
+ font-size: 1.5rem;
  padding: 21.5px 0;
  text-decoration: none;
- color: #F6F6F6;
+ color: var(--cor-secundaria);
  font-family: 'Montserrat', sans-serif;
  font-weight: 600;
- border: 2px solid #22D4FD; /* esse solid e uma propriedade nativa*/
+ border: 2px solid var(--cor-terciaria); /* esse solid e uma propriedade nativa - ??conferir se está pegando a cor??*/
 
 }
 .apresentacao__links__link:hover {
@@ -99,12 +104,12 @@ body{
 .rodape {
   padding: 24px;
   
-  color: #000000;
-  background-color: #22D4FD;
+  color: var(--cor-principal);
+  background-color: var(--cor-terciaria);
   
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
