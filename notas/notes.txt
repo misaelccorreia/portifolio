@@ -1,0 +1,13 @@
+Unidade de Medida
+
+(W3Schools)
+Medidas absolutas e Medidas relativas
+REM: é uma medida relativa a Rult Element, ou o principal de quem fez a pagina. 
+A escala seria 16px = 1rem
+
+*Quando fui aplicar o zoom os textos trabalharam dentro da página até certo ponto, chegando a descer de linha. 
+
+Estou em:
+HTML e CSS: trabalhando com responsividade e publicação de projetos.
+    01. Unidade de Medidas
+        04 Aplicando REM
